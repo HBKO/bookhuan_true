@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery
+/jquery-1.4.min.js"></script>
+<script type="text/javascript" src="{{url_for('static',filename='book.js',_external=True)}}"></script>
+<style type="text/css">
+body{
+    background-image:
+    url(content.png);
+    background-color: #eaeaea;
+    background-repeat:no-repeat;
+    background-position: top center;
+    font-size: 2.3em;
+    text-align: center;
+    background-size:cover;
+}
+#title{
+    float: top;
+    font-size: 1.6em;
+    margin-top: 3%;
+    color:#324e55;
+    position: absolute;
+    top: 0;
+    left: 40%
+    }
+#imga{
+    position:absolute; 
+    left: 3%;
+    top: 1.2%;
+}
+#sub{
+    background-image:
+    url(uploadbo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-size: 1.8em;
+    margin: 3%;
+    border: none;
+}
+#fengmian{
+    margin: 5%;
+}
+#imgfile{
+    
+    font-size: 1.2em
+}
+#fo{
+    text-align: center;
+    width: 100%;
+}
+.book-inf{
+    font-size: 0.8em;
+}
+</style>
+
+</head>
+<body>
+    <div id="banner">
+    <img src="{{url_for('static',filename='banner.png',_external=True)}}" />
+    </div>
+    <div id="title">
+        <b>发布图书</b>
+    </div>
+    <div id="imga">
+    <a href="/my">
+    <img border="0" src="{{url_for('static',filename='return.png',_external=True)}}" width="150%"/>
+    </a>
+    </div> 
+    <div id="fengmian">
+    <img id="up" name="up" src="{{url_for('static',filename='uploadcover.png',_external=True)}}" width="50%" alt="预览图片">
+    </div>
+    <div id="isbn">ISBN:
+    <input name="text"  type="text" id='search-box' value="9787512379435"/>
+    <button id='donate-identify'  onclick="donateSubmit()">�ύ</button>
+    </div>
+    <div  class="book-inf">
+    <img src class="cover"/><br/>
+    <article class="title"></article>
+    <article class="author"></article>
+    <article class="publisher"></article>
+    <article class="publish-time"></article>
+    <article class="isbn">ISBN</article>
+    </div>
+    <div id="subb">
+    <input id="sub" type="submit" value="现在发布"/> 
+    </div>
+    <div id="item">
+    </div>
+   
+    </a>
+    </div>
+    
+    
+
+
+</body>
+    

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+body{
+    background-image:
+    url(sign.png);
+    background-color: #eaeaea;
+    background-repeat:no-repeat;
+    background-position: top center;
+    font-size: 2.3em;
+    text-align: center;
+    background-size:cover;
+}
+.putin{
+    width: 50%;
+    float: left;
+
+  }
+#ID{
+    float: top;
+    border: 0;
+
+    font-size:1em;
+    position:absolute; 
+    left: 24%;
+    bottom: 42.1%;
+
+}
+#password{
+    float: top;
+    border: 0;
+    font-size:1em;
+    position:absolute; 
+    left: 24%;
+    bottom: 34.9%;
+
+}
+#sub{
+    float: top;
+    border: 0;
+    margin: 1%;
+    background-color: #fff;
+    font-size:1.6em;
+    position:absolute; 
+    left: 42.3%;
+    bottom: 22%;
+    font-weight: bold;
+    color: #324e55;
+}
+#in{
+    float: bottom;
+    position: absolute;
+    bottom: 3%; 
+    left: 3%;  
+    margin-left: 1%; 
+
+}
+#in a:link{
+    color: #333;
+    text-decoration:none;
+}
+#in a:visited{
+    color: #666;
+}
+#fo{
+    float: bottom;
+    position: absolute;
+    bottom: 3%; 
+    right: 3%;  
+    margin-right:1%; 
+}
+#fo a:link{
+    color: #333;
+    text-decoration:none;
+    }
+#fo a:visited{
+    color: #666;
+    }
+</style>
+</head>
+<body>
+    <div class="putin">
+        <form id="forms">
+        <input class="putintext" id="ID" type="text" name="ID" Placeholder="请输入你的账号…" required=required>
+        <input class="putintext" id="password" type="text" name="password" Placeholder="请输入你的密码…" required=required>  
+        <input id="sub" type="submit" value="登录"/>  
+        </form>
+    </div>
+    <div id="in">
+        <a href="/signin">注册</a>
+    </div>
+    <div id="fo">
+        <a href="/forget">忘记密码？</a>
+    </div>        
+    
+</body>
+    
+</html>

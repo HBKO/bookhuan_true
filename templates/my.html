@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+body{
+    background-image:
+    url(content.png);
+    background-color: #eaeaea;
+    background-repeat:no-repeat;
+    background-position: top center;
+    font-size: 2.3em;
+    text-align: center;
+    background-size:cover;
+}
+#title{
+    float: top;
+    font-size: 1.6em;
+    margin-top: 3%;
+    color:#324e55;
+    position: absolute;
+    top: 0;
+    left: 40%
+    }
+#imga{
+    position:absolute; 
+    left: 3%;
+    top: 1.2%;
+}
+#search{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+}
+.bottom{
+    width: 50%;
+    z-index:-1
+    
+}
+#individual{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
+#item{
+    float: top;
+    position: absolute;
+    width: 100%;
+}
+.words{
+    float: top;
+    color:#324e55;
+    z-index:1;
+    
+}
+#individualwords{
+    position: absolute;
+    bottom: 2%;
+    left: 24%;
+    font-size: 1.6em;
+}
+#searchwords{
+    position: absolute;
+    bottom: 1.6%;
+    left: 73%;
+    font-size: 2em;
+}
+#upload{
+    text-align: center; 
+    margin: 12%;
+    z-index: -1;
+}
+#upwprds{
+    color: #fff;
+    font-size: 3em;
+    z-index: 1;
+    position: absolute;
+    left: 34.6%;
+    top: 38.7%;
+}
+#touxiang{
+    text-align: center;
+    margin-top: 8%;
+    
+}
+.item{
+    float: top;
+    z-index: 1;
+    font-size: 1.6em;
+}
+#wodefabu{
+    position: absolute;
+    left: 17.5%;
+    top: 5.6%;
+}
+#wodeshoucang{
+    position: absolute;
+    left: 58.5%;
+    top: 5.6%;
+}
+#yihuandeshu{
+    position: absolute;
+    left: 17.5%;
+    top: 68.6%;
+}
+#liulanlishi{
+    position: absolute;
+    left: 58.5%;
+    top: 68.6%;
+}
+.item a:link{
+    color: #fff;
+    text-decoration:none;
+    }
+.item a:visited{
+    color: #fff;
+    }
+</style>
+</head>
+<body>
+    <div id="banner">
+    <img src="{{url_for('static',filename='banner.png',_external=True)}}" />
+    </div>
+    <div id="title">
+        <b>个　人</b>
+    </div>
+    <div id="imga">
+    <a href="/sign">
+    <img border="0" src="{{url_for('static',filename='return.png',_external=True)}}" width="150%"/>
+    </a>
+    </div> 
+    <div id="touxiang">
+    <img src="{{url_for('static',filename='headpic.png',_external=True)}}" width="100%">
+    </div>
+    <div id="upwprds">
+        发布图书
+    </div>
+    <div id="upload">
+    <a href="/upload">
+    <img src="{{url_for('static',filename='uploadbooks.png',_external=True)}}g" width="92%"/>
+    </a>
+    </div>
+    <div id="item">
+        <div  class="item" id="wodefabu">
+    <a href="/upload">我的发布</a>
+        </div>
+        <div  class="item" id="wodeshoucang">
+    <a href="/upload">我的收藏</a>
+        </div>
+        <div  class="item" id="yihuandeshu">
+    <a href="/upload">已换的书</a>
+        </div>
+        <div  class="item" id="liulanlishi">
+    <a href="/upload">浏览历史</a>
+        </div>
+    <img src="{{url_for('static',filename='list.png',_external=True)}}" width="70%"/>
+    </div>
+    
+    <div class="bottom" >
+    <div class="words" id="individualwords">查找
+    </div>
+    <img id="individual" border="0" src="{{url_for('static',filename='myon.png',_external=True)}}" />
+    
+    </div>
+    <div class="words" id="searchwords">我的
+    </div>
+    <div class="bottom">
+    <a href="/content">
+    <img id="search" src="{{url_for('static',filename='search.png',_external=True)}}" width="100%" / >
+    </a>
+    </div>
+    
+    
+
+
+</body>
+    

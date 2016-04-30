@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+body{
+    background-image:
+    url(signin.png);
+    background-color: #eaeaea;
+    background-repeat:no-repeat;
+    background-position: top center;
+    font-size: 2.3em;
+    text-align: center;
+    background-size:cover;
+}
+#title{
+    float: top;
+    font-size: 1.6em;
+    margin-top: 3%;
+    color:#324e55;
+    position: absolute;
+    top: 0;
+    left: 40%
+    }
+.putintext{
+    font-size: 1.6em;
+    float: left;
+    border: 0;
+    height: 4%;
+    font-size:1em;
+}
+#ID{
+    position: absolute;
+    top: 33.4%;
+    left: 22%;
+}
+#password1{
+    position: absolute;
+    top: 42.9%;
+    left: 22%;
+}
+#password2{
+    position: absolute;
+    top: 52.7%;
+    left: 22%;
+}
+#attention{
+    font-size: 0.7em;
+    position: absolute;
+    top:48%;
+    left: 22%;
+}
+#sub{
+    border: 0;
+    margin: 1%;
+    background-color: #fff;
+    height: 80px;
+    font-size:60px;
+    position:absolute; 
+    left: 37.8%;
+    bottom: 27%;
+    font-weight: bold;
+    color: #324e55;
+    }
+#imga{
+    position:absolute; 
+    left: 3%;
+    top: 1.2%;
+}
+
+</style>
+</head>
+<body>
+    <div id="banner">
+    <img src="{{url_for('static',filename='banner.png',_external=True)}}" />
+    </div>
+    <div id="title">
+        <b>注　册</b>
+    </div>
+    <div id="signinenter">
+        <input class="putintext" id="ID" type="text" name="ID" Placeholder="请输入想要注册的账号…" required=required>
+        <input class="putintext" id="password1" type="text" name="ID" Placeholder="请设置你的密码…" required=required>
+        <input class="putintext" id="password2" type="text" name="ID" Placeholder="请重复输入密码…" required=required>
+        <input id="sub" type="submit" value="现在加入"/> 
+    </div>
+    <div id="attention" >
+        *密码只能由数字、大写英文、小写英文组成
+    </div>
+    <div id="imga">
+    <a href="/sign">
+    <img border="0" src="{{url_for('static',filename='return.png',_external=True)}}" width="150%"/>
+    </a>
+    </div>
+</body>
+    
+</html>

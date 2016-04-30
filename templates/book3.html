@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery
+/jquery-1.4.min.js"></script>
+<script type="text/javascript" src="{{url_for('static',filename='book.js',_external=True)}}"></script>
+</head>
+
+<body>
+<div>ISBN:
+  <input name="text"  type="text" id='search-box' value="9787512379435"/>
+  <button id='donate-identify'  onclick="donateSubmit()">提交</button>
+</div>
+<div  class="book-inf" >
+<img src class="cover"/><br/>
+<a href  class="get-more" >豆瓣链接</a>
+<p class="title">标题</p>
+<p class="author">作者</p>
+<p class="publisher">出版社</p>
+<p class="publish-time">出版时间</p>
+<p class="isbn">ISBN</p>
+</div>
+</body>
+</html>

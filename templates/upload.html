@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+body{
+    background-image:
+    url(content.png);
+    background-color: #eaeaea;
+    background-repeat:no-repeat;
+    background-position: top center;
+    font-size: 2.3em;
+    text-align: center;
+    background-size:cover;
+}
+#title{
+    float: top;
+    font-size: 1.6em;
+    margin-top: 3%;
+    color:#324e55;
+    position: absolute;
+    top: 0;
+    left: 40%
+    }
+#imga{
+    position:absolute; 
+    left: 3%;
+    top: 1.2%;
+}
+#sub{
+    background-image:
+    url(uploadbo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-size: 1.8em;
+    margin: 3%;
+    border: none;
+}
+#fengmian{
+    margin: 5%;
+}
+#imgfile{
+    
+    font-size: 1.2em
+}
+#fo{
+    text-align: center;
+    width: 100%;
+}
+
+</style>
+<script>
+function upload(up,imgfile)
+{
+if (imgfile.value){ 
+up.src=imgfile.value;  
+} 
+}
+</script>
+</head>
+<body>
+    <div id="banner">
+    <img src="{{url_for('static',filename='banner.png',_external=True)}}" />
+    </div>
+    <div id="title">
+        <b>发布图书</b>
+    </div>
+    <div id="imga">
+    <a href="/">
+    <img border="0" src="{{url_for('static',filename='return.png',_external=True)}}" width="150%"/>
+    </a>
+    </div> 
+    <div id="fengmian">
+    <img id="up" name="up" src="{{url_for('static',filename='uploadcover.png',_external=True)}}" width="50%" alt="预览图片">
+    </div>
+    <div id="isbn">
+    <input name="text"  type="text" id='search-box' value="9787512379435"/>
+    <!--<div id="fo">
+    <form > 
+    <input name="imgfile" type="file" id="imgfile"  onchange="upload(up,this.form.imgfile);" /> 
+    </form> 
+    </div>-->
+    <div id="subb">
+    <input id="sub" type="submit" value="现在发布"/> 
+    </div>
+    <div id="item">
+    </div>
+   
+    </a>
+    </div>
+    
+    
+
+
+</body>
+    
